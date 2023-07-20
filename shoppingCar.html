@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping car</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    
+    <div class="header">
+        <div class="logo">
+<img src="aaa BENZI.png" alt="">
+</div>
+   
+
+<nav>  
+<ul id="menu-item">
+    <li><a href="#home"> home</a></li>
+    <li><a href="#about">about</a></li>
+    <li><a href="#service"> services</a></li>
+    <li><a href="#contact"> contact</a></li>
+   
+</ul>
+
+</nav>
+<img src="menu.png" alt="menu" class="menu" onclick="franc()">
+
+
+       
+
+
+    </div>
+ 
+<div id="home">
+    <div class="car">
+        <img src="car.png" alt="">
+    </div>
+</div>
+<div id="about">
+    <br> <br> 
+        <div class="about">
+      <center><h2>About</h2></center>  
+        <p>Selling a car is no easy feat, especially in a pandemic where people are strapped for money and supply chain issues mean low inventory.<br>Cars are a significant investment, so buyers want to make sure they take their time to buy the right one for them. Dealerships need to focus on relationship-building to earn buyers’ trust to close sales quicker.</p>
+        <p>But car buyers are still browsing the market, so dealerships need to stand out from their competitors to appeal to them. Text message marketing for car dealerships can help your business differentiate itself in a saturated market to build relationships and ultimately boost sales</p>
+    </div>
+</div>
+
+
+<br id="service"> <br> <br>
+    <div  class="title">Services</div>
+<div class="services">
+    <div class="car1"><img src="car.png" alt="">
+        <p>Describe how the vehicle looks and runs, Prioritize the features.
+            Make the car description easy to read. </p>   
+    </div>
+    <div class="car2"><img src="car.png" alt="">Describe how the vehicle looks and runs, Prioritize the features.
+        Make the car description easy to read.</div>
+
+    <div class="car3"><img src="car.png" alt="">Describe how the vehicle looks and runs, Prioritize the features.
+        Make the car description easy to read.</div>
+
+    <div class="car4"><img src="car.png" alt="">Describe how the vehicle looks and runs, Prioritize the features.
+        Make the car description easy to read.</div>
+    
+</div>
+
+    <div class="formcontainer" id="contact">
+        <form action="report.php" method="post">
+            <div class="formtitle">
+                <p>CONTACT FORM</p>
+            
+            
+                FullName <input type="text"id="fullname" name="fullname">
+            
+           
+                Email <input type="email" id="email" name="email">
+            
+         
+               <textarea class="textarea"id="message" name="message"></textarea>
+            </div>
+            <div class="button">
+            <input type="submit" value="SEND" name="send" onclick="validate()">
+        </div>
+
+        </form>
+    </div>
+<script>
+var item=document.getElementById("menu-item");
+item.style.maxHeight="0px";
+function franc(){
+    if (item.style.maxHeight == "0px"){
+        item.style.maxHeight="200px";
+    }
+    else{
+        item.style.maxHeight="0px";
+    }
+} 
+
+ 
+// function validate(){
+//     var fullname=document.getElementById("fullname").value;
+//  var regemail=document.getElementById("email").value;
+//  var massage=document.getElementById("message").value;
+//  var regName = /^[a-zA-Z]+ [a-zA-Z]+$/;
+//  var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+//  var numofcharacters;
+//  numofcharacters=massage.trim().length;
+
+
+//     if(!regName == fullname){
+//         alert('Please enter your full name (first & last name).');
+       
+//     }
+    
+//      else if(numofcharacters <8){
+//         alert(' you have entered many characters, please try again!')
+    
+
+
+
+//     }else{
+//      alert('your name is: ' + fullname +','  
+//       + ' your email is correct.' +','+' your emailis: ' +email
+//       + 'you write the correct message and the message is :' + massage);
+       
+//         return true;
+//     }
+// }
+
+</script>
+
+</body>
+
+<footer>
+    <span>&copy;&copy; copyright 2023</span>
+</footer>
+</html>
